@@ -7,7 +7,7 @@ import kafka as k
 if __name__ == "__main__":
     hostname = socket.gethostname()
     producer = k.KafkaProducer(
-            bootstrap_servers=[f"{hostname}:9092"],
+            bootstrap_servers=[f"localhost:9092"],
             api_version=(0, 10, 1)
     )
     print("Sending data")
